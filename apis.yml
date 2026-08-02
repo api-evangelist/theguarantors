@@ -1,8 +1,28 @@
 aid: theguarantors
 name: TheGuarantors
-description: 'TheGuarantors is a company surfaced as a portfolio company of partech and added to the API
-  Evangelist network as a stub for enrichment. Sector: Financial Services. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'TheGuarantors is a fintech company redefining access for renters and risk mitigation
+  for multifamily owner-operators. Its products include a Lease Guarantee and Zero-Gap Renters
+  Insurance: the Lease Guarantee helps renters get approved for a home even when they do not fit
+  traditional landlord requirements, while giving owner-operators coverage against defaults, damages,
+  vacancy, and no-shows, and Zero-Gap Renters Insurance combines a traditional HO4 policy with
+  always-on digital compliance and a tenant liability waiver. TheGuarantors exposes a partner Lease
+  Guarantee API that lets property management systems and screening providers embed the Lease
+  Guarantee directly into rental application and leasing workflows, with programmatic coverage
+  invitations, real-time status updates via API endpoints and webhooks, and rules-based engagement
+  configuration. API documentation is hosted on Stoplight at docs.theguarantors.com and access is
+  granted to integration partners.'
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://theguarantors.com/images/theguarantors-logo.svg
 url: https://raw.githubusercontent.com/api-evangelist/theguarantors/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,11 +32,38 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Financial Services
-apis: []
+- Fintech
+- Insurance
+- Real Estate
+- Rental
+- PropTech
+- Lease Guarantee
+- Renters Insurance
+- API
+apis:
+- name: TheGuarantors Lease Guarantee API
+  description: 'Partner integration API that enables property management systems and screening
+    providers to embed TheGuarantors Lease Guarantee directly into their rental application and
+    leasing workflow. Supports embedded workflow experiences, programmatic coverage invitations
+    auto-triggered during applications, real-time status updates via API endpoints and webhooks,
+    and rules-based engagement configuration. Access to documentation and sandbox credentials is
+    granted to integration partners.'
+  humanURL: https://docs.theguarantors.com/
+  baseURL: https://api.theguarantors.com
+  tags:
+  - Lease Guarantee
+  - Insurance
+  - Webhooks
+  - Partner API
+  properties:
+  - type: Documentation
+    url: https://docs.theguarantors.com/
+  - type: APIReference
+    url: https://docs.theguarantors.com/
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
@@ -24,4 +71,35 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: http://theguarantors.com/
+  url: https://www.theguarantors.com/
+- type: DeveloperPortal
+  url: https://docs.theguarantors.com/
+- type: Documentation
+  url: https://docs.theguarantors.com/
+- type: APIReference
+  url: https://docs.theguarantors.com/
+- type: Blog
+  url: https://www.theguarantors.com/blog
+- type: Support
+  url: https://www.theguarantors.com/contact-us
+- type: TermsOfService
+  url: https://www.theguarantors.com/terms
+- type: PrivacyPolicy
+  url: https://www.theguarantors.com/privacy
+- type: TrustCenter
+  url: https://trust.theguarantors.com/
+- type: DomainSecurity
+  url: security/theguarantors-domain-security.yml
+- type: WellKnown
+  url: well-known/theguarantors-well-known.yml
+- type: LinkedIn
+  url: https://www.linkedin.com/company/the-guarantors
+- type: Twitter
+  url: https://x.com/The_Guarantors
+- type: Facebook
+  url: https://www.facebook.com/TheGuarantors
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 2
+  pass: local-v1

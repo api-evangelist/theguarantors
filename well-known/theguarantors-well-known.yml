@@ -1,0 +1,48 @@
+generated: '2026-07-21'
+method: probed
+source: live probes of TheGuarantors marketing host, API host, and docs host
+hosts:
+- host: www.theguarantors.com
+  probes:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /security.txt
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /openapi.json
+    status: 404
+    file: null
+  - path: /swagger.json
+    status: 404
+    file: null
+  - path: /llms.txt
+    status: 404
+    file: null
+- host: api.theguarantors.com
+  note: Production API host is live but gated; the OpenAPI endpoint requires authentication.
+  probes:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /v1/openapi.json
+    status: 401
+    file: null
+- host: docs.theguarantors.com
+  note: Stoplight-hosted API documentation portal (workspace slug theguarantorsus); noindex and project spec not publicly downloadable.
+  probes:
+  - path: /
+    status: 200
+    file: null
