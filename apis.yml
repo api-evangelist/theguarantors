@@ -35,6 +35,16 @@ created: '2026-07-17'
 modified: '2026-07-21'
 tags:
 - Company
+- Financial-Services
+- Fintech
+- Insurance
+- Real-Estate
+- Rentals
+- PropTech
+- Lease Guarantee
+- Renters Insurance
+tags_raw:
+- Company
 - Financial Services
 - Fintech
 - Insurance
@@ -55,6 +65,11 @@ apis:
   humanURL: https://docs.theguarantors.com/
   baseURL: https://api.theguarantors.com
   tags:
+  - Lease Guarantee
+  - Insurance
+  - Webhook
+  - Partner API
+  tags_raw:
   - Lease Guarantee
   - Insurance
   - Webhooks
