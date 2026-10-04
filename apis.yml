@@ -46,10 +46,10 @@ created: '2026-07-17'
 modified: '2026-07-21'
 tags:
 - Company
-- Financial-Services
+- Financial Services
 - Fintech
 - Insurance
-- Real-Estate
+- Real Estate
 - Rentals
 - PropTech
 - Lease Guarantee
@@ -65,6 +65,8 @@ tags_raw:
 - Lease Guarantee
 - Renters Insurance
 - API
+- Financial-Services
+- Real-Estate
 apis:
 - name: TheGuarantors Lease Guarantee API
   description: 'Partner integration API that enables property management systems and screening
